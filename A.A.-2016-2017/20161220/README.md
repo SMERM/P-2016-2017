@@ -15,3 +15,4 @@
   * scheda video
   * disco rigido
   * numerazione binaria
+  * la funzione del numero di bits
