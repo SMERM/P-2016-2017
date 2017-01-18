@@ -5,9 +5,11 @@
 ## Argomenti Trattati
 
 * Presentazione del corso: suddivisione
+
 |giovedì|lunedì|martedì|
 |:---:|:---:|:---:|
 |TCMC|informatica|matematica|
+
 * strumenti per l'informatica:
   * linux: terminal tools
   * mac:   terminal tools
