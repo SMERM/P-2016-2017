@@ -6,8 +6,57 @@
 
 ## Argomenti trattati
 
+* revisione funzioni lineari
 * funzioni esponenziali a coefficienti lineari ($y = c^{ax + b}$)
 * funzioni logaritimche a coefficienti lineari ($y = log_c \( ax + b \)$)
+
+## Realizzazioni fatte in classe
+
+* funzioni lineari (`linea.m`):
+
+```octave
+p0=[2 3 ];
+p1=[7 8];
+x=[0:0.1:10];
+a=(p0(2)-p1(2))/(p0(1)-p1(1));
+b=(p0(2)-a*p0(1));
+y=a*x+b;
+plot(x,y,p0(1),p0(2),"*",p1(1),p1(2),"*")
+```
+
+![plot linea.m1](./linea.jpg)
+
+* funzioni esponenziali (`espo.m`):
+
+```octave
+c=7.23;
+cb=1/log(c);     % cambio base
+p0=[2 3 ];
+p1=[7 8];
+x=[0:0.1:10];
+a=(cb*log(p0(2))-cb*log(p1(2)))/(p0(1)-p1(1));
+b=(cb*log(p0(2))-a*p0(1));
+y=c.^(a*x+b);
+plot(x,y,p0(1),p0(2),"*",p1(1),p1(2),"*")
+```
+
+![plot espo.m1](./espo.jpg)
+
+* funzioni logaritmiche (`loga.m`):
+
+```octave
+c=7.23;
+cb=1/log(c);     % cambio base
+p0=[2 3 ];
+p1=[7 8];
+x=[0:0.1:10];
+a=(c^(p0(2))-c^(p1(2)))/(p0(1)-p1(1));
+b=(c^(p0(2))-a*p0(1));
+y=cb*log(a*x+b);
+plot(x,y,p0(1),p0(2),"*",p1(1),p1(2),"*")
+```
+
+![plot loga.m1](./loga.jpg)
 
 ## Compiti
 
