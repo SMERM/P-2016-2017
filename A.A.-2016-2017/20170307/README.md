@@ -5,7 +5,10 @@
 ## Argomenti trattati
 
 * Sistema operativo:
-
   * device drivers
 
-* Architetture di rete
+* Reti informatiche:
+  * indirizzamento `IP` (`IPv4`, accenno a `IPv6`)
+  * trasporto `TCP`
+  * Architetture di rete
+    * Introduzione alle architetture client/server
